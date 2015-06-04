@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Procrastination the root of all nothing
 date:   2014-02-10 06:42:45
 excerpt: Overthinking aint no fun!

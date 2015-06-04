@@ -1,5 +1,5 @@
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 kramdown:
   auto_ids: true
   input: GFM
