@@ -36,7 +36,7 @@ Last time we had created our module, pulled the module into our dummy-store and 
 
 Lets add some configuration to our module. We’re going to add a helper and model which will perform the actual logic of our module. Add the following to ```app/code/local/Alanablett/Apiextensions/etc/config.xml```:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <modules>
@@ -65,7 +65,7 @@ Here we are simply defining the class prefixes for our models and helpers. Now l
 
 The logic for this module is very simple. We will add a new method to the Api so that we can call ```getTaxRuleDataByName```, give it the tax rule to search for, and expect some data back from that call. Lets start by actually implementing the logic for this call. Create the following file ```app/code/local/Alanablett/Apiextensions/Model/Taxrules/Api.php```.
 
-```
+```php
 <?php
  
 class Alanablett_ApiExtensions_Model_Taxrules_Api {
@@ -126,7 +126,7 @@ This class will be the one used by our Api call. In particular we will be hookin
 
 Now lets create our helper file. We won’t actually be implementing anything ourselves here, it just extends the core abstract helper class. Create your helper as follows ```app/code/local/Alanablett/Apiextensions/Helper/Data.php```.
 
-```
+```php
 <?php
  
 class Alanablett_Apiextensions_Helper_Data extends Mage_Core_Helper_Abstract {}
@@ -136,7 +136,7 @@ class Alanablett_Apiextensions_Helper_Data extends Mage_Core_Helper_Abstract {}
 
 Our module ```api.xml``` configuration file will map the name that we want to call on the Api, to the function of our new model. Create the file in our modules etc folder at ```app/code/local/Alanablett/Apiextensions/etc/api.xml``` with the following content:
 
-```
+```xml
 <config>
     <api>
         <resources>
@@ -187,7 +187,7 @@ Log in to the administration area and go to ```System > Web Services > SOAP/XML-
 
 To test our new Api endpoint create a simple stand alone php script with the following:
 
-```
+```php
 <?php
  
 $client = new SoapClient('http://local.domain/api/soap/?wsdl');
@@ -242,7 +242,7 @@ To git@github.com:alanablett/api-extensions.git
 
 Now modify your dummy-store composer.json file to use the new github repo rather than the local file system. In my case it looks like this:
 
-```
+```json
 {
     "require": {
         "magento-hackathon/magento-composer-installer":"*",

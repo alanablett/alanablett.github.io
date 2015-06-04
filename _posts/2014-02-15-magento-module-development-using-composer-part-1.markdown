@@ -90,7 +90,7 @@ We’ll begin by defining our modules ```composer.json``` file. This is just a b
 
 Add the following content:
 
-```
+```json
 {
     "name":"alanablett/api-extensions",
     "type":"magento-module",
@@ -135,7 +135,7 @@ $ mkdir -p app/etc/modules
 
 Now create the file ```api-extensions/app/etc/modules/Alanablett_Apiextensions.xml```. Inside that file define our module like this:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <modules>
@@ -158,7 +158,7 @@ $ mkdir -p app/code/community/Alanablett/Apiextensions/etc
 
 Now add you configuration file in ```app/code/local/Alanablett/Apiextensions/etc/config.xml```
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <modules>
@@ -184,7 +184,7 @@ $ git commit -m "Added module config files"
 
 So far we have our Magento install in one folder, and our new module in another. Its time to bring the two together. Ordinarily we would add modules into our stores composer.json file, and they would be pulled from a repository somewhere online. However, in this case we want to pull from a repository that exists on the local file system. We would also like to be able to directly work on the module whilst it in actually installed in our Magento shop. Lets add a reference to our module in our dummy store composer file. Assuming you are inside the ```dummy-store``` directory, add the following to ```composer.json```:
 
-```
+```json
 {
     "require": {
         "magento-hackathon/magento-composer-installer":"*",

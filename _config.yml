@@ -16,6 +16,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      comments: true
 
 title: "Alan Ablett"
 description: > # this means to ignore newlines until "email:"
