@@ -1,10 +1,22 @@
 # Build settings
-markdown: redcarpet
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  input: GFM
+
 highlighter: pygments
 gems:
   - jemoji
   
 # Site settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 title: "Alan Ablett"
 description: > # this means to ignore newlines until "email:"
    Web Developer based in Leicester, England
