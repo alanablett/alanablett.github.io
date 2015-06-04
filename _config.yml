@@ -9,6 +9,7 @@ gems:
   - jemoji
   
 # Site settings
+permalink: pretty
 defaults:
   -
     scope:
