@@ -18,6 +18,12 @@ defaults:
     values:
       layout: "post"
       comments: true
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
 
 title: "Alan Ablett"
 description: > # this means to ignore newlines until "email:"
