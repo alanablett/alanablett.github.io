@@ -111,8 +111,8 @@ class Foo_Bar_Model_Baz_Test extends PHPUnit_Framework_TestCase
         /**
          * ARRANGE
          * 
-         * Create a mock of our adapter. We also force the getDistroServerVars
-         * to return a specific value.
+         * Create a mock of our adapter. We also force
+         * getDistroServerVars to return a specific value.
          */
         $configMock = $this->getMockBuilder('Foo_Bar_Model_Baz_Adapter_Config')
                           ->getMock();
@@ -128,8 +128,8 @@ class Foo_Bar_Model_Baz_Test extends PHPUnit_Framework_TestCase
         $baz_model = new Foo_Bar_Model_Baz($configMock);
         
         /**
-         * A simple array that we expect to get from the call
-         * to our sillyExample method
+         * Here we define a simple array that we expect to get
+         * in return from the call to our sillyExample method
          */
         $expected = array(
             'base_url' => 'http://madeup-localhost.dev',
