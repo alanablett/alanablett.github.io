@@ -30,9 +30,9 @@ class Foo_Bar_Model_Baz
 } ?>
 ```
 
-Our ```sillyExample``` method is used to get some server vars, and merging in our own vars if the base url of our site contains the word localhost. A very silly and simple example, but it shows the issue perfectly.
+Our ```sillyExample``` method is used to get some server vars, then merges in some other variables from the array passed in, if the base url of our site contains the word localhost. A very silly and simple example, but it shows the issue perfectly.
 
-You might think this isnt too bad; I though the same until recently. The real problem starts when we want to test this model (which we should). Following unit testing best practices, we shouldnt be running any code outside of our class. Remember, unit testing means we are testing in isolation, not calling other parts of our system (thats what integration & acceptance tests are for). We need to get rid of that hard coded ```core/config``` model so that we can mock any calls to it.
+You might think this isnt too bad; I thought the same until recently. The real problem starts when we want to test this model (which we should). Following unit testing best practices, we shouldnt be running any code outside of our class. Remember, unit testing means we are testing in isolation, not calling other parts of our system (thats what integration & acceptance tests are for). We need to get rid of that hard coded ```core/config``` model so that we can mock any calls to it.
 
 ## What will a mock do for us?
 
