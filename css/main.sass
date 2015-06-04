@@ -270,6 +270,8 @@ body
       color: #fff
       margin-bottom: 16px
       text-shadow: 0px 1px 16px rgba(0,0,0,0.5), 0px 0px 1px rgba(0,0,0,0.5)
+      @include respond-to(480)
+        font-size: 38px
     .author-image
       display: inline-block
       width: 30px
@@ -318,6 +320,8 @@ body
       line-height: 1.1
       color: #333332
       margin-bottom: 16px
+      @include respond-to(480)
+        font-size: 38px
     .author-image
       display: inline-block
       width: 30px
@@ -356,6 +360,8 @@ body
       margin: 0
       font-family: $font-sans
       margin-bottom: 4px
+      @include respond-to(480)
+        font-size: 18px
     h2, h1
       letter-spacing: -0.02em
       font-weight: 700
@@ -363,6 +369,8 @@ body
       font-size: 32px
       line-height: 1.2
       margin-bottom: 4px
+      @include respond-to(480)
+        font-size: 26px
     p
       font-weight: 400
       font-style: normal
@@ -374,6 +382,9 @@ body
       -webkit-hyphens: auto
       -moz-hyphens: auto
       hyphens: auto
+      @include respond-to(480)
+        font-size: 16px
+        line-height: 26px
     a
       color: #333
       text-decoration: underline
@@ -392,6 +403,8 @@ body
       outline: 0
       z-index: 300
       text-align: center
+      @include respond-to(480)
+        font-size: 12px
     hr
       border: 0
       padding: 0
@@ -425,6 +438,8 @@ body
       margin-left: 30px
       margin-bottom: 12px
       padding-top: 2px
+      @include respond-to(480)
+        font-size: 18px
       p
         padding: 0 0 golden-ratio(1rem,  1)
     ol li
@@ -591,6 +606,8 @@ code
   border: 1px solid #e8e8e8
   border-radius: 3px
   background-color: #eef
+  @include respond-to(480)
+    font-size: 12px
 
 code
   padding: 1px 5px
