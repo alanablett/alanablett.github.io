@@ -89,6 +89,8 @@ class Foo_Bar_Model_Baz_Adapter_Config
 
 Take a look at our ```Foo_Bar_Model_Baz``` class now. Upon instantiation we can now pass in a config adapter. If we dont pass one, we automatically use ```Foo_Bar_Model_Baz_Adapter_Config``` which is our implemetation using the ```core/config``` model. However, it also means we can create a mock of the adapter and pass that into our constructor instead.
 
+## Testing Foo\_Bar\_Model\_Baz
+
 Here is what a typical test might look like. I have added some docs which may help understand the process if testing is new to you.
 
 ```php
