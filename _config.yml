@@ -1,0 +1,55 @@
+# Build settings
+markdown: redcarpet
+highlighter: pygments
+gems:
+  - jemoji
+  
+# Site settings
+title: "Alan Ablett"
+description: > # this means to ignore newlines until "email:"
+   Web Developer based in Leicester, England
+
+email: alan@alanablett.com
+#blog logo
+logo: "/assets/images/aa_logo.jpg"
+# blog cover
+cover: "/assets/images/background_image.jpg"
+
+name: 'Alan Ablett'
+author: 'Alan Ablett'
+author_image: "/assets/images/author.jpg"
+
+paginate:	5
+
+url: "http://alanablett.com" # the base hostname & protocol for your site
+baseurl: ""
+
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/alanablett
+    desc: Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: https://www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
+
+  - icon:	github
+    url:	https://github.com/alanablett
+    desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:
