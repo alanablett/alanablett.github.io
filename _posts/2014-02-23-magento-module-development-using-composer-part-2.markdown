@@ -2,6 +2,7 @@
 title:  Magento module development using composer part 2
 date:   2014-02-23
 excerpt: In this lesson we'll write our module code, then push it up to github ready to pull into our future magento builds.
+redirect_from: "/blog/magento-module-development-using-composer-part-2/"
 ---
 
 [Part 1 available here][part-1].

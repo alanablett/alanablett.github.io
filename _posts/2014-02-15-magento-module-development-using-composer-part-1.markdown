@@ -2,6 +2,7 @@
 title:  Magento module development using composer part 1
 date:   2014-02-15
 excerpt: In this lesson we'll set some ground work and prepare our environment to build the module.
+redirect_from: "/blog/magento-module-development-using-composer-part-1/"
 ---
 
 [Part 2 available here][part-2].
