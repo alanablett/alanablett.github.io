@@ -1,67 +1,119 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lutterworth Town FC</title>
+    <meta charset="utf-8">
+    <meta name="description" value="The Official Website for Adult and Youth Teams of Lutterworth Town FC">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Poppins:400,700,800&amp;display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-family: Poppins, sans-serif;
+            color: #fff9f2;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            min-height: 100%;
+        }
+        
+        body {
 
-<div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}></div>
-</div>
-
-<header class="blog-header">
-    {% if site.author_image %}
-      <a class="blog-logo" href="{{site.url}}" style="background-image: url('{{ site.author_image }}')">{{ site.title }}</a>
-    {% endif %}
-    <h1 class="blog-title">{{ site.title }}</h1>
-    <h2 class="blog-description">{{ site.description }}</h2>
-    <div class="custom-links">
-      {% for social in site.social %}
-        {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}">
-              <i class="fa fa-{{ social.icon }}"></i>
-            </a>
-            &nbsp;&nbsp;·&nbsp;&nbsp;
-        {% endif %}
-      {% endfor %}
-    </div>
-</header>
-
-
-<main class="content" role="main">
+            background-image: url(./emilio-garcia-AWdCgDDedH0-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .info {
+            max-width: 650px;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            max-height: 150px;
+            margin: 0 auto 1.3rem;
+            display: block;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1.3rem;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        
+        @media screen and (min-width: 480px) {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+        
+        .contact {
+            margin-top: 2rem;
+        }
+        
+        .socials {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .socials a {
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+        
+        .socials svg {
+            fill: #fff9f2;
+            width: 60px;
+            height: 60px;
+            transition: all 0.3s;
+        }
+        
+        .socials svg:hover {
+            fill: #ed8936;
+        }
+    </style>
+</head>
+<body>
     
-    <div class="cf frame">
-      {% for post in paginator.posts %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.excerpt }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+    <div class="background">
+        <div class="info">
+            <img class="logo" src="./lutterworth-town-fc-logo.png" alt="Lutterworth Town FC Logo">
+            <h1>Lutterworth Town FC</h1>
+            <p style="text-align: center;">New website coming soon</p>
+            
+            <div class="contact">
+                <strong>Adult Teams</strong>
+                <p>Andy Dixon (Chairman): 07855836489</p>
+                <p>Josh Dixon (1st Team Manager): 07800898277</p>
+                <p style="margin-bottom: 2rem;">Steve Hastings (Reserve Team Manager): 07434848555</p>
+                
+                <strong>Youth Teams</strong>
+                <p>Richard Ablett (Chairman): 07976094490</p>
             </div>
-          </div>
-        </article>
-      {% endfor %}
+            
+            <div class="socials">
+                <a target="_blank" href="https://twitter.com/official_ltfc?lang=en">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+                </a>
+                
+                <a target="_blank" href="https://www.facebook.com/lutterworth.townfc/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
+                </a>
+            </div>
+        </div>
     </div>
-
-    <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href="/">Newer posts &rarr;</a>
-        {% else %}
-          <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-        {% endif %}
-      {% endif %}
-    </nav>
-
-
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
-
-</main>
+    
+</body>
+</html>
